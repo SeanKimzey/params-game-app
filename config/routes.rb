@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/url-params' => 'games#params_1'
+  get '/guess-number/:guess' => 'games#guess_game'
 end
